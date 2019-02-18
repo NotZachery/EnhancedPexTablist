@@ -1,0 +1,13 @@
+name: EnhancedPexTablist
+version: ${project.version}
+main: me.notzachery.enhancedpextablist.EnhancedPexTablist
+authors: [NotZachery]
+description: A better version of "PermissionExTabColors".
+website: https://github.com/NotZachery
+database: false
+depend: [PermissionsEx]
+
+commands:
+  EPT:
+    description: Command to reload configuration or update the tablist if it doesn't update.
+    usage:
