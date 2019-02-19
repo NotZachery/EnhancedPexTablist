@@ -18,7 +18,7 @@ public class EnhancedPexTablist extends JavaPlugin {
             this.getLogger().info(ChatColor.RED + "PermissionsEx is needed for EnhancedPexTablist to work!");
             Bukkit.getServer().getPluginManager().disablePlugin(this);
         } else {
-            getLogger().info(ChatColor.GREEN + "SimplyASpawn 1.0-SNAPSHOT Enabled");
+            getLogger().info(ChatColor.GREEN + "EnhancedPexTablist 1.0-SNAPSHOT Enabled");
             Bukkit.getServer().getPluginManager().registerEvents(new Listeners(), this);
             getCommand("EPT").setExecutor(new EPTCommand());
             this.saveConfig();
@@ -34,6 +34,6 @@ public class EnhancedPexTablist extends JavaPlugin {
         Pex.pex = null;
         Config.groupColors = null;
         this.reloadConfig();
-        getLogger().info(ChatColor.RED + "SimplyASpawn 1.0-SNAPSHOT Disabled");
+        getLogger().info(ChatColor.RED + "EnhancedPexTablist 1.0-SNAPSHOT Disabled");
     }
 }
